@@ -1,0 +1,106 @@
+* {
+  list-style-type: none;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+html, body{
+  height: 100%; /* Make sure the <html> and <body> elements cover the full viewport height */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.region {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  margin-top: 10em;
+}
+
+.comp1and2and3{
+  display: flex;
+  margin: 0 0 0 5em 
+}
+
+.comp1{
+  width: 18em;
+  margin-left: 5em,
+}
+
+.comp2{
+  width: 45em;
+  padding-top: 10em;
+  margin-left: -10em
+}
+
+.comp3{
+  width: 45em;
+  padding-top: 3em;
+  margin-left: 3em
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+  body{
+    max-width: 480px;
+    width: 100%;
+
+  }
+  .title{
+    display: none;
+  }
+
+  .wrapper{
+    position: static;
+    width: 100vw; /* Make the wrapper's width equal to the viewport width */
+    height: 100vh; /* Make the wrapper's height 100% of its parent (body in this case) */
+  }
+
+  .comp3{
+    display: none;
+  }
+
+  .comp1and2and3{
+    position: relative;
+    margin: 3em 0 0 0;
+
+  }
+
+  .comp1{
+    margin-bottom: 3em;
+  }
+  
+  .comp2{
+    position: absolute;
+    margin: 5em 0 0 0;
+    height: 100px;
+    width: 100px;
+  }
+  .comp2 img{
+    height: 350px;
+    width: 350px;
+  }
+
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+ 
+
+}
